@@ -77,12 +77,6 @@
   cursor: pointer;
 }
 
-/* .active {
-  background-color: var(--blue-color);
-  color: white;
-  border-radius: 0.5rem;
-} */
-
 a {
   color: var(--primary-text-color);
   text-decoration: none;

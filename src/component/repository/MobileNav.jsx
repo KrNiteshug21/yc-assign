@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const MobileNav = ({ navItems, footerItems }) => {
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -36,10 +36,10 @@ const MobileNav = ({ navItems, footerItems }) => {
             <img src="/img/chevron-down.svg" alt="search" />
           </div>
           {navItems.map((nav, index) => (
-            <Link to={nav.link} key={index} className="flex mobileNavItem">
+            <NavLink to={nav.link} key={index} className={`flex mobileNavItem`}>
               <img src={nav.img} alt={nav.name} />
               <p>{nav.name}</p>
-            </Link>
+            </NavLink>
           ))}
           {footerItems.map((footer, index) => (
             <Link

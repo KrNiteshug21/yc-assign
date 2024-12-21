@@ -14,7 +14,12 @@ const DesktopNav = ({ navItems, footerItems }) => {
           <img src="/img/chevron-down.svg" alt="search" />
         </div>
         {navItems.map((nav, index) => (
-          <NavLink to={nav.link} key={index} className={`desktopNavItem flex`}>
+          <NavLink
+            to={nav.link}
+            key={index}
+            className={`${({ isActive }) =>
+              isActive ? "active" : ""} desktopNavItem flex`}
+          >
             <img src={nav.img} alt={nav.name} />
             <p>{nav.name}</p>
           </NavLink>

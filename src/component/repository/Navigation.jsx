@@ -11,22 +11,22 @@ const navItems = [
   {
     img: "/img/code.svg",
     name: "AI Code Review",
-    link: "#",
+    link: "/ai-code-review",
   },
   {
     img: "/img/cloud.svg",
     name: "Cloud Security",
-    link: "#",
+    link: "/cloud-security",
   },
   {
     img: "/img/book.svg",
     name: "How to Use",
-    link: "#",
+    link: "/how-to-use",
   },
   {
     img: "/img/gear.svg",
     name: "Settings",
-    link: "#",
+    link: "/settings",
   },
 ];
 
