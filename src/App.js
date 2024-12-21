@@ -1,13 +1,17 @@
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./component/home/Home";
+import Login from "./component/login/Login";
+import Repository from "./component/repository/Repository";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/repository" element={<Repository />} />
+      </Routes>
     </div>
   );
 }

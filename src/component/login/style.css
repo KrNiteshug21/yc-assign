@@ -1,0 +1,146 @@
+/*          Utilities           */
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/*          Login        */
+.loginScreen {
+  position: relative;
+  min-height: 100vh;
+  border: 2px solid var(--secondary-bg-color);
+}
+
+.detailSection,
+.loginSection {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.subtractLogo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.featureCard {
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: var(--primary-bg-color);
+  box-shadow: 0 0 10px var(--secondary-bg-color);
+}
+
+.featureHeader,
+.featureStats {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stats {
+  text-align: center;
+  h3 {
+    font-size: 1.7rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+.issueCard {
+  width: 40%;
+  background-color: var(--primary-bg-color);
+  position: absolute;
+  bottom: -7rem;
+  right: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px var(--secondary-bg-color);
+  padding: 1rem;
+}
+
+.issueHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  img {
+    width: 2.5rem;
+  }
+  div h3 {
+    font-size: 0.85rem;
+  }
+  div p {
+    font-size: 0.95rem;
+  }
+}
+
+.login {
+  border-radius: 0.5rem;
+  background-color: var(--primary-bg-color);
+  box-shadow: 0 0 10px var(--secondary-bg-color);
+}
+
+.loginHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.loginOptionBtns {
+  display: flex;
+  align-items: center;
+  min-width: 25rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--secondary-bg-color);
+  overflow: hidden;
+  button {
+    border: none;
+    flex: 1;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.active {
+  background-color: var(--blue-color);
+  color: var(--primary-bg-color);
+  border-radius: 0.3rem;
+}
+
+.loginOptions {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  div {
+    border: 2px solid var(--secondary-bg-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.privary-policy {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .subtractLogo,
+  .detailSection {
+    display: none;
+  }
+}
